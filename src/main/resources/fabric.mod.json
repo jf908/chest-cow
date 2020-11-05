@@ -1,0 +1,14 @@
+{
+  "id": "chestcow",
+  "name": "Chest Cow",
+  "description": "Chest Cow is a mod that adds a cow that can store items.",
+  "version": "1.0.0",
+  "side": "universal",
+  "initializer": "net.chestcow.ChestCow",
+  "requires": {
+    "fabric": "*"
+  },
+  "mixins": {
+    "common": "chestcow.common.json"
+  }
+}

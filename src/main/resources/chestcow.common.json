@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.chestcow.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AddChestToCow"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
