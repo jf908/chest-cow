@@ -9,6 +9,6 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 public class RenderChestCow extends CowEntityRenderer {
 	public RenderChestCow(EntityRenderDispatcher dispatcher) {
 		super(dispatcher);
-    	this.addFeature(new LayerChest(this));
-    }
+		this.addFeature(new LayerChest(this));
+	}
 }

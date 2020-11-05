@@ -1,10 +1,10 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "net.chestcow.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "AddChestToCow"
-  ],
+  "mixins": ["AddChestToCow"],
+  "client": ["ChestBlockEntityRendererAccessor"],
   "injectors": {
     "defaultRequire": 1
   }

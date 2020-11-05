@@ -1,14 +1,24 @@
 {
+  "schemaVersion": 1,
   "id": "chestcow",
+  "version": "${version}",
+
   "name": "Chest Cow",
   "description": "Chest Cow is a mod that adds a cow that can store items.",
-  "version": "1.0.0",
-  "side": "universal",
-  "initializer": "net.chestcow.ChestCow",
-  "requires": {
-    "fabric": "*"
+  "authors": ["jf908"],
+  "contact": {
+    "sources": "https://github.com/jf908/chest-cow"
   },
-  "mixins": {
-    "common": "chestcow.common.json"
+  "license": "GPL-3.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.chestcow.ChestCow"],
+    "client": ["net.chestcow.ChestCowClient"]
+  },
+  "mixins": ["chestcow.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
   }
 }
